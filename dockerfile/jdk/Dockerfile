@@ -1,6 +1,5 @@
 FROM centos
 MAINTAINER seanpan2008@gmail.com
 
-ADD jdk-8u181-linux-x64.rpm .
-
-RUN yum install -y jdk-8u181-linux-x64.rpm
+RUN wget https://blueo.oss-cn-beijing-internal.aliyuncs.com/jdk-8u181-linux-x64.rpm?Expires=1551245204&OSSAccessKeyId=TMP.AQFGOgTsqHIlEsOFRNfJqinSZRu9Bznjts6dzPWhLQHMwVfkRWGjgAjgkmYXMC4CFQDBrO3v17xZbQyeDTDdNyhRaESIbwIVAKecsbfZUJNuCLbdrESxIqRCG4Pz&Signature=dylNHEL1iHfuIl5VTHitExl1Wrk%3D
+RUN yum localinstall -y jdk-8u181-linux-x64.rpm
